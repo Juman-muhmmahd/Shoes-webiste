@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO -->
+  <title>Step Vibe | Walk Your Vibe</title>
+  <meta name="description" content="Step Vibe - Trendy and comfortable shoes for everyday style. Shop now and walk your vibe.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1 class="logo">Step Vibe</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Walk Your Vibe</h2>
+    <p>Discover stylish & comfortable shoes</p>
+    <button onclick="scrollToProducts()">Shop Now</button>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products">
+    <h2>Our Shoes</h2>
+
+    <div class="product-container">
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c25lYWtlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Running Shoes">
+        <h3>Running Shoes</h3>
+        <p>$49</p>
+        <button onclick="addToCart('Running Shoes')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c25lYWtlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Casual Sneakers" width="100px" height="100px">
+
+        <h3>Casual Sneakers</h3>
+        <p>$39</p>
+        <button onclick="addToCart('Casual Sneakers')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1571601035754-5c927f2d7edc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c25lYWtlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Sports Shoes">
+        <h3>Sports Shoes</h3>
+        <p>$59</p>
+        <button onclick="addToCart('Sports Shoes')">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Step Vibe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

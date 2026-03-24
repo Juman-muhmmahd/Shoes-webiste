@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: black;
+  color: white;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: url('https://media.istockphoto.com/id/1304862992/photo/object-pattern-sneakers.jpg?s=1024x1024&w=is&k=20&c=oBjdwdoGr9xEnWaRdQxj1t1ldyluL-s4QEL1yiYoyOY=') center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Products */
+.products {
+  padding: 40px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+}
+
+/* Contact */
+.contact {
+  padding: 40px;
+  text-align: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
